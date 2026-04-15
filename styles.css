@@ -1704,6 +1704,7 @@ ul, ol {
 
     .bento-grid--v3 {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
             "polish"
             "photo1"
