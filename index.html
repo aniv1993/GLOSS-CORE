@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gloss & Core — премиальный детейлинг-центр. Восстанавливаем заводской вид автомобилей. Полировка, керамика, защитная плёнка, химчистка салона.">
+    <meta name="keywords" content="детейлинг, полировка авто, керамическое покрытие, защитная плёнка PPF, химчистка салона, премиальный детейлинг">
+    <meta property="og:title" content="Gloss & Core — Премиальный детейлинг">
+    <meta property="og:description" content="Не мойка. Реставрация. Восстанавливаем заводской вид премиальных автомобилей.">
+    <meta property="og:type" content="website">
+    <title>Gloss & Core — Премиальный детейлинг и защита автомобилей</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23080808'/><text x='4' y='22' font-size='14' font-family='sans-serif' font-weight='700' fill='%237EB8DA'>G</text><text x='17' y='22' font-size='14' font-family='sans-serif' font-weight='500' fill='%236B7280'>C</text></svg>">
+</head>
+<body>
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__logo">
+            <span class="logo__gloss">GLOSS</span>
+            <span class="logo__amp">&</span>
+            <span class="logo__core">CORE</span>
+        </div>
+        <div class="preloader__bar"><div class="preloader__progress"></div></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HEADER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="#hero" class="header__logo" id="logo">
+                <span class="logo__gloss">GLOSS</span>
+                <span class="logo__amp">&</span>
+                <span class="logo__core">CORE</span>
+            </a>
+            <nav class="header__nav" id="nav">
+                <a href="#competencies" class="nav__link">Услуги</a>
+                <a href="#before-after" class="nav__link">Результат</a>
+                <a href="#pricing" class="nav__link">Прайс</a>
+                <a href="#tech" class="nav__link">Технологии</a>
+                <a href="#stats" class="nav__link">О нас</a>
+            </nav>
+            <a href="#contact" class="header__cta" id="header-cta">Записаться</a>
+            <button class="header__burger" id="burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile overlay menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__inner">
+            <nav class="mobile-menu__nav">
+                <a href="#competencies" class="mobile-menu__link">Услуги</a>
+                <a href="#before-after" class="mobile-menu__link">Результат</a>
+                <a href="#pricing" class="mobile-menu__link">Прайс</a>
+                <a href="#tech" class="mobile-menu__link">Технологии</a>
+                <a href="#stats" class="mobile-menu__link">О нас</a>
+                <a href="#contact" class="mobile-menu__link mobile-menu__link--cta">Записаться на осмотр</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 1: HERO -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <!-- Full-bleed background image (right half) -->
+        <div class="hero__bg" id="hero-image"></div>
+        <div class="hero__bg-gradient"></div>
+
+        <div class="hero__inner">
+            <div class="hero__content">
+                <p class="hero__label animate-in">Премиальный детейлинг-центр</p>
+                <h1 class="hero__title animate-in">
+                    <span class="hero__title-line">Не мойка.</span>
+                    <span class="hero__title-line hero__title-line--accent">Реставрация.</span>
+                </h1>
+                <p class="hero__subtitle animate-in">
+                    Восстанавливаем заводской вид премиальных автомобилей. 
+                    Полировка, керамика, защитная плёнка — без компромиссов.
+                </p>
+                <div class="hero__actions animate-in">
+                    <a href="#contact" class="btn btn--primary" id="hero-cta">
+                        <span>Записаться на осмотр</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#before-after" class="btn btn--ghost" id="hero-result">Увидеть результат</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- OLD BENTO GRID (commented out for rollback)
+    <section class="competencies" id="competencies">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">Наши компетенции</span>
+                <h2 class="section-title">Четыре направления<br><span class="text-accent">безупречной защиты</span></h2>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card bento-card--large animate-in" id="card-polish">
+                    <div class="bento-card__icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="20"/><path d="M24 4C24 4 32 16 32 24C32 32 24 44 24 44"/><path d="M24 4C24 4 16 16 16 24C16 32 24 44 24 44"/><line x1="4" y1="24" x2="44" y2="24"/></svg></div>
+                    <div class="bento-card__number">01</div>
+                    <h3 class="bento-card__title">Полировка кузова</h3>
+                    <p class="bento-card__desc">Многоэтапная коррекция лакокрасочного покрытия. Убираем голограммы, царапины, окислы — возвращаем заводскую глубину цвета.</p>
+                    <div class="bento-card__tag">Восстановление</div>
+                </div>
+                <div class="bento-card animate-in" id="card-ceramic">
+                    <div class="bento-card__icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4L4 14V34L24 44L44 34V14L24 4Z"/><path d="M24 4V44"/><path d="M4 14L44 34"/><path d="M44 14L4 34"/></svg></div>
+                    <div class="bento-card__number">02</div>
+                    <h3 class="bento-card__title">Керамическое покрытие</h3>
+                    <p class="bento-card__desc">9H-керамика формирует невидимый панцирь. Гидрофобный эффект, защита от UV и химии на срок до 5 лет.</p>
+                    <div class="bento-card__tag">Защита</div>
+                </div>
+                <div class="bento-card animate-in" id="card-ppf">
+                    <div class="bento-card__icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M6 18H42"/><path d="M6 30H42"/><path d="M18 6V42"/><path d="M30 6V42"/></svg></div>
+                    <div class="bento-card__number">03</div>
+                    <h3 class="bento-card__title">Защита плёнкой PPF</h3>
+                    <p class="bento-card__desc">Полиуретановая плёнка — невидимый щит от сколов, гравия и песка. Самозатягивание мелких повреждений при нагреве.</p>
+                    <div class="bento-card__tag">Бронирование</div>
+                </div>
+                <div class="bento-card animate-in" id="card-interior">
+                    <div class="bento-card__icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8C12 8 8 12 8 24C8 36 12 40 12 40"/><path d="M36 8C36 8 40 12 40 24C40 36 36 40 36 40"/><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="2"/></svg></div>
+                    <div class="bento-card__number">04</div>
+                    <h3 class="bento-card__title">Химчистка салона</h3>
+                    <p class="bento-card__desc">Поэлементная реставрация интерьера: кожа, алькантара, пластик, потолок. Убираем запахи, пятна, следы эксплуатации.</p>
+                    <div class="bento-card__tag">Интерьер</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    END OLD BENTO GRID -->
+
+    <!-- BENTO GRID V2 (7 cards, 3 photos — commented out for rollback)
+    <section class="competencies" id="competencies">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">Наши компетенции</span>
+                <h2 class="section-title">Четыре направления<br><span class="text-accent">безупречной защиты</span></h2>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card bento-card--blue bento-card--wide animate-in" id="card-polish">
+                    <div class="bento-card__number">01</div>
+                    <h3 class="bento-card__title">Полировка<br>кузова</h3>
+                    <p class="bento-card__desc">Многоэтапная коррекция ЛКП. Убираем голограммы, царапины, окислы — возвращаем заводскую глубину цвета.</p>
+                    <div class="bento-card__tag">Восстановление →</div>
+                </div>
+                <div class="bento-card bento-card--photo bento-card--photo-1 animate-in"></div>
+                <div class="bento-card bento-card--photo bento-card--photo-2 animate-in"></div>
+                <div class="bento-card bento-card--blue animate-in" id="card-ceramic">
+                    <div class="bento-card__number">02</div>
+                    <h3 class="bento-card__title">Керамическое<br>покрытие</h3>
+                    <p class="bento-card__desc">9H-керамика формирует невидимый панцирь. Гидрофобный эффект, защита от UV и химии до 5 лет.</p>
+                    <div class="bento-card__tag">Защита →</div>
+                </div>
+                <div class="bento-card bento-card--gray animate-in" id="card-ppf">
+                    <div class="bento-card__number">03</div>
+                    <h3 class="bento-card__title">Защита<br>плёнкой PPF</h3>
+                    <p class="bento-card__desc">Полиуретановая плёнка — невидимый щит от сколов и гравия. Самозатягивание при нагреве.</p>
+                    <div class="bento-card__tag">Бронирование →</div>
+                </div>
+                <div class="bento-card bento-card--blue animate-in" id="card-interior">
+                    <div class="bento-card__number">04</div>
+                    <h3 class="bento-card__title">Химчистка<br>салона</h3>
+                    <p class="bento-card__desc">Реставрация интерьера: кожа, алькантара, пластик, потолок. Убираем запахи, пятна, следы.</p>
+                    <div class="bento-card__tag">Интерьер →</div>
+                </div>
+                <div class="bento-card bento-card--photo bento-card--photo-3 bento-card--wide animate-in"></div>
+            </div>
+        </div>
+    </section>
+    END BENTO GRID V2 -->
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 2: COMPETENCIES (V3 — Tall cards, 2 photos) -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="competencies" id="competencies">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">Наши компетенции</span>
+                <h2 class="section-title">Четыре направления<br><span class="text-accent">безупречной защиты</span></h2>
+            </div>
+            <div class="bento-grid bento-grid--v3">
+                <!-- 01 Полировка — tall, spans 2 rows -->
+                <div class="bento-card bento-card--blue bento-card--tall animate-in" id="card-polish" style="grid-area: polish;">
+                    <div class="bento-card__number">01</div>
+                    <h3 class="bento-card__title">Полировка<br>кузова</h3>
+                    <p class="bento-card__desc">Многоэтапная коррекция ЛКП. Убираем голограммы, царапины, окислы — возвращаем заводскую глубину цвета.</p>
+                    <div class="bento-card__tag">Восстановление →</div>
+                </div>
+
+                <!-- Photo 1 — car close-up -->
+                <div class="bento-card bento-card--photo bento-card--photo-1 animate-in" style="grid-area: photo1;"></div>
+
+                <!-- 02 Керамика — tall, spans 2 rows -->
+                <div class="bento-card bento-card--blue bento-card--tall animate-in" id="card-ceramic" style="grid-area: ceramic;">
+                    <div class="bento-card__number">02</div>
+                    <h3 class="bento-card__title">Керамическое<br>покрытие</h3>
+                    <p class="bento-card__desc">9H-керамика формирует невидимый панцирь. Гидрофобный эффект, защита от UV и химии до 5 лет.</p>
+                    <div class="bento-card__tag">Защита →</div>
+                </div>
+
+                <!-- 03 PPF -->
+                <div class="bento-card bento-card--gray animate-in" id="card-ppf" style="grid-area: ppf;">
+                    <div class="bento-card__number">03</div>
+                    <h3 class="bento-card__title">Защита<br>плёнкой PPF</h3>
+                    <p class="bento-card__desc">Полиуретановая плёнка — невидимый щит от сколов и гравия. Самозатягивание при нагреве.</p>
+                    <div class="bento-card__tag">Бронирование →</div>
+                </div>
+
+                <!-- 04 Химчистка -->
+                <div class="bento-card bento-card--blue animate-in" id="card-interior" style="grid-area: interior;">
+                    <div class="bento-card__number">04</div>
+                    <h3 class="bento-card__title">Химчистка<br>салона</h3>
+                    <p class="bento-card__desc">Реставрация интерьера: кожа, алькантара, пластик, потолок. Убираем запахи, пятна, следы.</p>
+                    <div class="bento-card__tag">Интерьер →</div>
+                </div>
+
+                <!-- Photo 2 — wide -->
+                <div class="bento-card bento-card--photo bento-card--photo-2 animate-in" style="grid-area: photo2;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 3: BEFORE / AFTER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="before-after" id="before-after">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">Результат</span>
+                <h2 class="section-title">Увидеть —<br><span class="text-accent">значит поверить</span></h2>
+                <p class="section-desc">Потяните ползунок, чтобы увидеть разницу между «до» и «после» нашей работы.</p>
+            </div>
+            <div class="ba-slider animate-in" id="ba-slider">
+                <div class="ba-slider__before" id="ba-before">
+                    <div class="ba-slider__image ba-slider__image--before"></div>
+                    <div class="ba-slider__label ba-slider__label--before">До</div>
+                </div>
+                <div class="ba-slider__after" id="ba-after">
+                    <div class="ba-slider__image ba-slider__image--after"></div>
+                    <div class="ba-slider__label ba-slider__label--after">После</div>
+                </div>
+                <div class="ba-slider__handle" id="ba-handle">
+                    <div class="ba-slider__handle-line"></div>
+                    <div class="ba-slider__handle-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 4l-6 8 6 8"/>
+                            <path d="M16 4l6 8-6 8"/>
+                        </svg>
+                    </div>
+                    <div class="ba-slider__handle-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 4: PRICING -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">Прозрачный прайс</span>
+                <h2 class="section-title">Честные цены<br><span class="text-accent">без скрытых доплат</span></h2>
+                <p class="section-desc">Стоимость зависит от класса автомобиля. Точную цену рассчитаем после осмотра.</p>
+            </div>
+
+            <!-- Service Tabs -->
+            <div class="pricing__tabs animate-in" id="pricing-tabs">
+                <button class="pricing__tab pricing__tab--active" data-tab="polish">Полировка</button>
+                <button class="pricing__tab" data-tab="ceramic">Керамика</button>
+                <button class="pricing__tab" data-tab="ppf">PPF Плёнка</button>
+                <button class="pricing__tab" data-tab="interior">Химчистка</button>
+            </div>
+
+            <div class="pricing__grid animate-in">
+                <!-- Sedan -->
+                <div class="price-card" id="price-sedan">
+                    <div class="price-card__header">
+                        <div class="price-card__type">Базовый</div>
+                        <div class="price-card__icon">
+                            <svg width="64" height="32" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M8 22H4C2 22 2 20 2 20V18C2 16 4 16 4 16H8L16 10H40L52 16H60C62 16 62 18 62 18V20C62 22 60 22 60 22H56"/>
+                                <circle cx="14" cy="24" r="4"/>
+                                <circle cx="50" cy="24" r="4"/>
+                                <path d="M18 24H46"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="price-card__body">
+                        <div class="price-card__price" data-polish="15000" data-ceramic="25000" data-ppf="45000" data-interior="8000">
+                            <span class="price-card__from">от</span>
+                            <span class="price-card__amount">15 000</span>
+                            <span class="price-card__currency">₽</span>
+                        </div>
+                        <ul class="price-card__features">
+                            <li data-polish="Мягкая + финишная полировка" data-ceramic="Керамика 1 слой + подготовка" data-ppf="Полный капот + бампер + фары" data-interior="Полная химчистка салона">Мягкая + финишная полировка</li>
+                            <li data-polish="Удаление 80% дефектов" data-ceramic="Гидрофобный эффект до 3 лет" data-ppf="Плёнка SunTek / XPEL" data-interior="Кожа, ткань, потолок">Удаление 80% дефектов</li>
+                            <li data-polish="Срок работы: 1 день" data-ceramic="Срок работы: 2 дня" data-ppf="Срок работы: 2–3 дня" data-interior="Срок работы: 1 день">Срок работы: 1 день</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="price-card__cta">Рассчитать точно</a>
+                </div>
+
+                <!-- Crossover -->
+                <div class="price-card price-card--featured" id="price-crossover">
+                    <div class="price-card__badge">Популярное</div>
+                    <div class="price-card__header">
+                        <div class="price-card__type">Оптимальный</div>
+                        <div class="price-card__icon">
+                            <svg width="64" height="36" viewBox="0 0 64 36" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M8 24H4C2 24 2 22 2 22V20C2 18 4 18 4 18H8L14 8H44L54 18H60C62 18 62 20 62 20V22C62 24 60 24 60 24H56"/>
+                                <circle cx="14" cy="28" r="4"/>
+                                <circle cx="50" cy="28" r="4"/>
+                                <path d="M18 28H46"/>
+                                <line x1="14" y1="8" x2="14" y2="18"/>
+                                <line x1="44" y1="8" x2="54" y2="18"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="price-card__body">
+                        <div class="price-card__price" data-polish="20000" data-ceramic="35000" data-ppf="65000" data-interior="12000">
+                            <span class="price-card__from">от</span>
+                            <span class="price-card__amount">20 000</span>
+                            <span class="price-card__currency">₽</span>
+                        </div>
+                        <ul class="price-card__features">
+                            <li data-polish="3-этапная коррекция ЛКП" data-ceramic="Керамика 2 слоя + подготовка" data-ppf="Полный перед + зоны риска" data-interior="Полная химчистка + озонирование">3-этапная коррекция ЛКП</li>
+                            <li data-polish="Удаление 95% дефектов" data-ceramic="Гидрофобный эффект до 5 лет" data-ppf="Плёнка SunTek / XPEL" data-interior="Кожа, алькантара, пластик">Удаление 95% дефектов</li>
+                            <li data-polish="Срок работы: 1–2 дня" data-ceramic="Срок работы: 2–3 дня" data-ppf="Срок работы: 3–5 дней" data-interior="Срок работы: 1–2 дня">Срок работы: 1–2 дня</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="price-card__cta">Рассчитать точно</a>
+                </div>
+
+                <!-- SUV -->
+                <div class="price-card" id="price-suv">
+                    <div class="price-card__header">
+                        <div class="price-card__type">Максимальный</div>
+                        <div class="price-card__icon">
+                            <svg width="64" height="40" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M8 28H4C2 28 2 26 2 26V24C2 22 4 22 4 22H8L12 8H48L56 22H60C62 22 62 24 62 24V26C62 28 60 28 60 28H56"/>
+                                <circle cx="14" cy="32" r="4"/>
+                                <circle cx="50" cy="32" r="4"/>
+                                <path d="M18 32H46"/>
+                                <rect x="12" y="8" width="36" height="14" rx="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="price-card__body">
+                        <div class="price-card__price" data-polish="25000" data-ceramic="45000" data-ppf="90000" data-interior="15000">
+                            <span class="price-card__from">от</span>
+                            <span class="price-card__amount">25 000</span>
+                            <span class="price-card__currency">₽</span>
+                        </div>
+                        <ul class="price-card__features">
+                            <li data-polish="Полная коррекция + жидкое стекло" data-ceramic="Керамика 3 слоя + колёсные диски" data-ppf="Полная оклейка кузова" data-interior="VIP-химчистка + кондиционирование">Полная коррекция + жидкое стекло</li>
+                            <li data-polish="100% устранение дефектов" data-ceramic="Максимальная защита на 5+ лет" data-ppf="Плёнка SunTek / XPEL Ultimate" data-interior="Кожа, дерево, алькантара, потолок">100% устранение дефектов</li>
+                            <li data-polish="Срок работы: 2–3 дня" data-ceramic="Срок работы: 3–4 дня" data-ppf="Срок работы: 5–7 дней" data-interior="Срок работы: 2 дня">Срок работы: 2–3 дня</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="price-card__cta">Рассчитать точно</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 5: TECHNOLOGIES -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="tech" id="tech">
+        <div class="container">
+            <div class="tech__layout">
+                <div class="tech__content animate-in">
+                    <span class="section-label">Технологии и составы</span>
+                    <h2 class="section-title">Лаборатория,<br><span class="text-accent">а не гараж</span></h2>
+                    <p class="tech__text">
+                        Мы работаем только с профессиональными составами мирового уровня. 
+                        Каждый продукт прошёл нашу внутреннюю сертификацию и проверен 
+                        тысячами часов практики.
+                    </p>
+                    <div class="tech__features">
+                        <div class="tech__feature">
+                            <div class="tech__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Сертифицированные составы</strong>
+                                <p>Koch Chemie, Gyeon, CarPro, Sonax</p>
+                            </div>
+                        </div>
+                        <div class="tech__feature">
+                            <div class="tech__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Премиальные плёнки</strong>
+                                <p>XPEL Ultimate Plus, SunTek Ultra</p>
+                            </div>
+                        </div>
+                        <div class="tech__feature">
+                            <div class="tech__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Профессиональный свет</strong>
+                                <p>Scangrip — мировой стандарт детейлинг-освещения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech__visual animate-in">
+                    <div class="tech__image" id="tech-image">
+                        <!-- Lab/process image -->
+                    </div>
+                    <div class="tech__brands">
+                        <div class="tech__brand">Koch Chemie</div>
+                        <div class="tech__brand">Gyeon</div>
+                        <div class="tech__brand">XPEL</div>
+                        <div class="tech__brand">SunTek</div>
+                        <div class="tech__brand">CarPro</div>
+                        <div class="tech__brand">Scangrip</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 6: STATS -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-label">Мы в цифрах</span>
+                <h2 class="section-title">Факты вместо<br><span class="text-accent">пустых обещаний</span></h2>
+            </div>
+            <div class="stats__grid animate-in">
+                <div class="stat-card" id="stat-1">
+                    <div class="stat-card__number" data-target="8">0</div>
+                    <div class="stat-card__suffix">лет</div>
+                    <div class="stat-card__label">Опыта на рынке<br>премиального детейлинга</div>
+                </div>
+                <div class="stat-card" id="stat-2">
+                    <div class="stat-card__number" data-target="1500">0</div>
+                    <div class="stat-card__suffix">+</div>
+                    <div class="stat-card__label">Автомобилей прошли<br>через наши руки</div>
+                </div>
+                <div class="stat-card" id="stat-3">
+                    <div class="stat-card__number" data-target="5">0</div>
+                    <div class="stat-card__suffix">лет</div>
+                    <div class="stat-card__label">Гарантия на<br>керамическое покрытие</div>
+                </div>
+                <div class="stat-card" id="stat-4">
+                    <div class="stat-card__number" data-target="98">0</div>
+                    <div class="stat-card__suffix">%</div>
+                    <div class="stat-card__label">Клиентов возвращаются<br>к нам повторно</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 7: CONTACT FORM -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__layout">
+                <div class="contact__content animate-in">
+                    <span class="section-label">Запись на осмотр</span>
+                    <h2 class="section-title">Обсудим<br><span class="text-accent">ваш автомобиль</span></h2>
+                    <p class="contact__text">
+                        Оставьте заявку — перезвоним за 5 минут, чтобы обсудить детали, 
+                        рассчитать точную стоимость и подобрать удобное время.
+                    </p>
+                    <div class="contact__guarantees">
+                        <div class="contact__guarantee">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>Бесплатная консультация</span>
+                        </div>
+                        <div class="contact__guarantee">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <span>Перезвоним за 5 минут</span>
+                        </div>
+                        <div class="contact__guarantee">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+                            <span>Без обязательств</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-wrapper animate-in">
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <label for="client-name" class="form__label">Ваше имя</label>
+                            <input type="text" id="client-name" name="name" class="form__input" placeholder="Александр" required autocomplete="name">
+                        </div>
+                        <div class="form__group">
+                            <label for="client-phone" class="form__label">Телефон</label>
+                            <input type="tel" id="client-phone" name="phone" class="form__input" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+                        </div>
+                        <button type="submit" class="form__submit btn btn--primary btn--full" id="form-submit">
+                            <span>Записаться на осмотр</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+                    </form>
+                    <!-- Success message -->
+                    <div class="contact__success" id="form-success">
+                        <div class="contact__success-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+                        </div>
+                        <h3>Заявка отправлена</h3>
+                        <p>Перезвоним вам в ближайшие 5 минут для обсуждения деталей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="#hero" class="header__logo">
+                        <span class="logo__gloss">GLOSS</span>
+                        <span class="logo__amp">&</span>
+                        <span class="logo__core">CORE</span>
+                    </a>
+                    <p class="footer__tagline">Премиальный детейлинг.<br>Без компромиссов.</p>
+                </div>
+                <div class="footer__nav">
+                    <h4 class="footer__nav-title">Навигация</h4>
+                    <a href="#competencies">Услуги</a>
+                    <a href="#before-after">Результат</a>
+                    <a href="#pricing">Прайс</a>
+                    <a href="#tech">Технологии</a>
+                </div>
+                <div class="footer__contact">
+                    <h4 class="footer__nav-title">Контакты</h4>
+                    <a href="tel:+78001234567">+7 (800) 123-45-67</a>
+                    <a href="mailto:info@glosscore.ru">info@glosscore.ru</a>
+                    <p>Ежедневно 9:00 — 21:00</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Gloss & Core. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
